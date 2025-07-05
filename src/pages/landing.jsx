@@ -32,7 +32,7 @@ const Landing = () => {
                 <Link to="/features">Features</Link>
               </li>
               <li>
-                <Link to="/en/courses">Courses</Link>
+                <Link to="/en/dashboard">Courses</Link>
               </li>
               <li>
                 <Link to="/en/leaderboard">LeaderBoard</Link>
