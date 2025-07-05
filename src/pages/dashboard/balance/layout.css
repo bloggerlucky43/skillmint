@@ -1,0 +1,46 @@
+.balance-page {
+  background-color: #080c1d;
+}
+.balance-container {
+  background-color: #131c3f;
+  margin-top: 20vh;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  justify-content: space-between;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+}
+.balance h5 {
+  margin-bottom: 2rem;
+}
+.balance h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.claim {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff6b2c;
+  color: white;
+}
+.hourly h5 {
+  margin-bottom: 2rem;
+}
+.hourly p {
+  color: #d6d9e0;
+  margin-bottom: 4rem;
+}
+.earn {
+  padding: 12px;
+  border-radius: 8px;
+  background: none;
+  border: solid 2px #080c1d;
+  color: white;
+}
