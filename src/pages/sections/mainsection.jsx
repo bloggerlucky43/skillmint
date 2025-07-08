@@ -1,6 +1,6 @@
-const MainSection = () => {
+const MainSection = ({sectionRef}) => {
   return (
-    <div className="main-container">
+    <div className="main-container" ref={sectionRef}>
       <h1>What we offer!</h1>
       <p>Boost your web3 skills while earning rewards</p>
       <div className="feature-container">

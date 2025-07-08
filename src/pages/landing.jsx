@@ -10,6 +10,7 @@ const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const featureRef = useRef(null);
+  const faqRef=useRef(null)
 
   const handleOpen = () => setShowDrawer(true);
   const handleClose = () => setShowDrawer(false);
@@ -38,7 +39,7 @@ const Landing = () => {
             <ul>
               <li>
                 <a
-                  to="/features"
+                  href='#'
                   onClick={(e) => scrollToSection(featureRef, e)}>
                   Features
                 </a>
@@ -53,7 +54,9 @@ const Landing = () => {
                 <Link to="/en/profile">Profile</Link>
               </li>
               <li>
-                <Link to="/features">Faq</Link>
+                <a href="#"
+                 onClick={(e) => scrollToSection(faqRef, e)}
+                >Faq</a>
               </li>
             </ul>
           </div>
@@ -72,15 +75,15 @@ const Landing = () => {
           <Headline />
         </div>
         <div>
-          <Section />
+          <Section ref={featureRef} />
         </div>
         <div className="main-section">
-          <MainSection />
+          <MainSection sectionRef={featureRef} />
         </div>
 
         {/* Faq section */}
         <div>
-          <Faq />
+          <Faq questionRef={faqRef}/>
         </div>
       </div>
 

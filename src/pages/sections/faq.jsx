@@ -1,6 +1,6 @@
-const Faq = () => {
+const Faq = ({questionRef}) => {
   return (
-    <div className="container my-5">
+    <div className="container my-5" ref={questionRef}>
       <h2 className="text-white mb-4 text-center">
         Frequently Asked Questions
       </h2>
