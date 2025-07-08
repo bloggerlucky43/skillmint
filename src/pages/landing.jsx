@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Headline from "./sections/headline";
 import MainSection from "./sections/mainsection";
@@ -8,12 +9,19 @@ import { useState } from "react";
 const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const featureRef = useRef(null);
 
   const handleOpen = () => setShowDrawer(true);
   const handleClose = () => setShowDrawer(false);
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+
+  const scrollToSection = (ref, e) => {
+    e.preventDefault();
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="page">
       <div className="general-container">
@@ -29,7 +37,11 @@ const Landing = () => {
           <div className="links">
             <ul>
               <li>
-                <Link to="/features">Features</Link>
+                <a
+                  to="/features"
+                  onClick={(e) => scrollToSection(featureRef, e)}>
+                  Features
+                </a>
               </li>
               <li>
                 <Link to="/en/dashboard">Courses</Link>

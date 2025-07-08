@@ -1,5 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Layout = () => {
+  const navigate = useNavigate();
+
+  const clickFunction = () => {
+    navigate("/");
+  };
   return (
     <div className="dashboard-page">
       <div className="dashboard-container">
@@ -10,12 +15,12 @@ const Layout = () => {
               alt="logo"
               loading="lazy"
             />
-            <h1>SkillMint</h1>
+            <h1 onClick={clickFunction}>SkillMint</h1>
           </div>
 
           <div className="dashboard-links">
-            <Link>Courses</Link>
-            <Link>My Learning</Link>
+            <Link to="/en/dashboard">Courses</Link>
+            <Link to="/en/learn/course">My Learning</Link>
             <Link>LeaderBoard</Link>
             <Link>Tasks</Link>
             <Link to="/en/profile">Profile</Link>

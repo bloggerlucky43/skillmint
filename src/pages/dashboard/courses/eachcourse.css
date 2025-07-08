@@ -27,14 +27,62 @@
   padding: 2rem;
 }
 .course-content {
-  background-color: red;
+  justify-content: center;
 }
 .course-btn {
   place-self: center;
 }
 .course-btn button {
-  padding: 1rem 2rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
   border: none;
+  color: white;
   border-radius: 8px;
+  background: none;
+  border: solid 2px #ff6b2c;
+}
+.course-btn button:hover {
   background-color: #ff6b2c;
+  color: #080c1d;
+  border: none;
+  transform: scale(1.1);
+}
+.course-btn button:active {
+  background-color: #ff6b2c;
+  color: #080c1d;
+  border: none;
+  transform: scale(1.1);
+}
+.course-segment {
+  display: flex;
+  justify-self: center;
+  color: white;
+  background-color: #0a0f24;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-top: 2vh;
+}
+.course-segment h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.bi-book {
+  color: #d6d9e0 !important;
+  margin-left: 1vh;
+}
+.bi-check2-circle {
+  color: #d6d9e0 !important;
+}
+.course-mission {
+  justify-self: center;
+  color: white;
+  padding: 8px;
+  margin-top: 2vh;
+  background-color: #0a0f24;
+  width: 50vw;
+  text-align: center;
 }
