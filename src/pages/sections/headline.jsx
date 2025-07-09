@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-const Headline = () => {
+const Headline = ({ mainRef }) => {
   return (
     <>
-      <div className="sub-head-container">
+      <div className="sub-head-container" ref={mainRef}>
         <div className="sub-container mx-3">
           <h1>
             Learn Web3. <br />

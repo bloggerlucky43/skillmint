@@ -10,7 +10,8 @@ const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const featureRef = useRef(null);
-  const faqRef=useRef(null)
+  const faqRef = useRef(null);
+  const navRef = useRef(null);
 
   const handleOpen = () => setShowDrawer(true);
   const handleClose = () => setShowDrawer(false);
@@ -23,11 +24,16 @@ const Landing = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="page">
       <div className="general-container">
         <div className="nav">
-          <div className="logo">
+          <div className="logo" onClick={handleClick}>
             <img
               src="/images/SM-removebg-preview.png"
               alt="logo"
@@ -38,9 +44,7 @@ const Landing = () => {
           <div className="links">
             <ul>
               <li>
-                <a
-                  href='#'
-                  onClick={(e) => scrollToSection(featureRef, e)}>
+                <a href="#" onClick={(e) => scrollToSection(featureRef, e)}>
                   Features
                 </a>
               </li>
@@ -54,9 +58,9 @@ const Landing = () => {
                 <Link to="/en/profile">Profile</Link>
               </li>
               <li>
-                <a href="#"
-                 onClick={(e) => scrollToSection(faqRef, e)}
-                >Faq</a>
+                <a href="#" onClick={(e) => scrollToSection(faqRef, e)}>
+                  Faq
+                </a>
               </li>
             </ul>
           </div>
@@ -72,10 +76,10 @@ const Landing = () => {
         </div>
 
         <div className="subheadline">
-          <Headline />
+          <Headline mainref={navRef} />
         </div>
         <div>
-          <Section ref={featureRef} />
+          <Section />
         </div>
         <div className="main-section">
           <MainSection sectionRef={featureRef} />
@@ -83,7 +87,7 @@ const Landing = () => {
 
         {/* Faq section */}
         <div>
-          <Faq questionRef={faqRef}/>
+          <Faq questionRef={faqRef} />
         </div>
       </div>
 

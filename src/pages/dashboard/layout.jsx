@@ -9,13 +9,13 @@ const Layout = () => {
     <div className="dashboard-page">
       <div className="dashboard-container">
         <div className="dashboard-nav">
-          <div className="dashboard-logo">
+          <div className="dashboard-logo" onClick={clickFunction}>
             <img
               src="/images/SM-removebg-preview.png"
               alt="logo"
               loading="lazy"
             />
-            <h1 onClick={clickFunction}>SkillMint</h1>
+            <h1>SkillMint</h1>
           </div>
 
           <div className="dashboard-links">
