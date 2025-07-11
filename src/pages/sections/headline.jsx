@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-const Headline = ({ mainRef }) => {
+const Headline = ({ mainRef, handleOpen }) => {
   return (
     <>
       <div className="sub-head-container" ref={mainRef}>
@@ -15,7 +15,7 @@ const Headline = ({ mainRef }) => {
             master blockchain skills, and earn real tokens & NFTs.
           </p>
           <div className="btn-started">
-            <button>
+            <button onClick={handleOpen}>
               <Link>Get Started</Link>
             </button>
             <button id="whitepaper">

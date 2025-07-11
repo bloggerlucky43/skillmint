@@ -539,10 +539,10 @@
     align-items: center;
   }
   .sm-logo img {
-    width: 36%;
+    width: 28%;
   }
   .sm-logo h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 1vw;
   }
   .bi-menu {
@@ -553,7 +553,7 @@
   .bi-menu:active {
     background-color: #0a0f24;
   }
-  .bi-menu-button-wide {
+  .bi-list {
     color: #d6d9e0 !important;
   }
 
@@ -567,71 +567,22 @@
     flex-direction: column;
   }
 
-  .links ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .links a {
+  .drop-list a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    margin-top: 2vh;
+    font-size: 1.4rem;
   }
-  .links a:hover {
-    color: #ff6b2c;
+  .links {
+    display: none;
   }
+
   .buttons {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
+    display: block;
   }
-  .buttons button {
-    padding: 0.5rem 1rem;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    /* background: linear-gradient(to right, #ff6b2c, #3a4fff); */
-  }
-  .btn-started {
-    display: flex;
-    padding: 1rem;
-  }
-  .btn-started button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    background-color: #ff6b2c;
-  }
-  #whitepaper {
-    background: none;
-    margin-left: 1vh;
-    border: solid 2px blue;
-  }
-  #register {
-    background: none;
-    border: solid 2px;
-    border-color: #ff6b2c;
-  }
-
-  .btn-started a {
-    color: white;
-    text-decoration: none;
-  }
-  .buttons button:hover {
-    background-color: #bd4c1b;
-  }
-
   .sub-head-container {
     color: #d6d9e0;
-    margin-top: 4vh;
+    margin-top: 8vh;
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 2rem;
@@ -640,16 +591,14 @@
     justify-content: space-evenly;
   }
   .sub-container {
-    max-width: 600px;
+    max-width: 630px;
     flex: 1 1 50%;
   }
   .animation {
-    width: 50vw;
-    height: auto;
-    margin-right: 2vh;
+    width: 100%;
   }
   .hero-animation {
-    width: 60vw;
+    width: 100%;
   }
   .sub-head-container h1 {
     font-size: 3.4rem;
@@ -658,9 +607,7 @@
     margin-bottom: 1rem;
   }
   .sub-head-container p {
-    font-size: 1.1rem;
-    color: #d6d9e0;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
   .main-container {
     text-align: center;
@@ -669,16 +616,17 @@
   }
   .main-container h1 {
     color: #d6d9e0;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-container p {
     color: #d6d9e0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .feature-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   .feature {
@@ -696,88 +644,25 @@
     width: 2rem !important;
     margin-bottom: 2vh;
   }
-  .how-con {
-    background-color: #0a0f24;
-    text-align: center;
-    color: #d6d9e0;
-    padding: 2rem 4rem;
-  }
-  .how-con h1 {
-    font-size: 2.2rem;
-  }
-  .how-con p {
-    margin-top: 2vh;
-    font-size: 1.4rem;
-  }
-  .how-subcontainer {
-    font-size: 2rem;
-    justify-self: center;
-    line-height: 6rem;
-  }
-  .how li {
-    list-style-type: decimal;
-  }
+
   .section-container {
     text-align: center;
-    color: #d6d9e0;
   }
   .section-container h1 {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
     font-size: 1.6rem;
+    font-weight: 400;
   }
-  .marquee {
-    background-color: #0a0f24;
-  }
-  /* src/components/ImageMarquee.css */
-  .marquee-container {
-    overflow: hidden;
-    width: 100%;
-    background-color: #0a0f24;
-    padding: 10px 0;
-  }
-
   .marquee {
     display: flex;
     width: fit-content;
     animation: scroll 20s linear infinite;
   }
-
   .marquee img {
     width: 150px;
-    height: auto;
-    margin: 0 20px;
-    object-fit: contain;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  .faq-container {
-    color: #d6d9e0;
-    padding: 2rem;
-  }
-  .accordion-item {
-    background-color: #0a0f24 !important;
-  }
-  .accordion-button {
-    background-color: #0a0f24 !important;
   }
   .form-bg {
-    width: 400px;
-    z-index: 1050;
-    transition: transform 0.3s ease-in-out;
-    background: rgba(255, 255, 255, 0.1) !important; /* translucent white */
-    backdrop-filter: blur(10px); /* background blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* softer shadow */
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 70%;
   }
 }
 
@@ -819,9 +704,10 @@
 
   .bi-menu:active {
     background-color: #0a0f24;
+    filter: invert(1) !important;
   }
-  .bi-menu-button-wide {
-    color: #d6d9e0 !important;
+  .bi-list {
+    fill: #d6d9e0 !important;
   }
 
   .drop-list {
@@ -833,11 +719,14 @@
     display: flex;
     flex-direction: column;
   }
+  .drop-section h2 {
+    font-size: 1rem;
+  }
   .drop-list a {
     text-decoration: none;
     color: white;
     margin-top: 2vh;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
   }
   .links {
     display: none;
@@ -846,31 +735,6 @@
   .buttons {
     display: block;
   }
-  .btn-started button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    background-color: #ff6b2c;
-  }
-  #whitepaper {
-    background: none;
-    margin-left: 1vh;
-    border: solid 2px blue;
-  }
-  #register {
-    background: none;
-    border: solid 2px;
-    border-color: #ff6b2c;
-  }
-
-  .btn-started a {
-    color: white;
-    text-decoration: none;
-  }
-
   .sub-head-container {
     color: #d6d9e0;
     margin-top: 8vh;
@@ -940,17 +804,12 @@
   }
   .section-container {
     text-align: center;
-    color: #d6d9e0;
   }
   .section-container h1 {
     margin-bottom: 1vh;
     font-size: 1.4rem;
     font-weight: 400;
   }
-  .marquee {
-    background-color: #0a0f24;
-  }
-
   .marquee-container {
     overflow: hidden;
     width: 100%;
@@ -966,5 +825,8 @@
 
   .marquee img {
     width: 120px;
+  }
+  .form-bg {
+    width: 85%;
   }
 }

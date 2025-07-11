@@ -165,7 +165,7 @@ const Landing = () => {
         </div>
 
         <div className="subheadline">
-          <Headline mainref={navRef} />
+          <Headline mainref={navRef} handleOpen={handleOpen} />
         </div>
         <div>
           <Section />
