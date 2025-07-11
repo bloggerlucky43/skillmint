@@ -71,3 +71,26 @@
   width: 1rem !important;
   height: 1rem !important;
 }
+
+/* smaller screens */
+@media (max-width: 575.98px) {
+  .dashboard-logo {
+    display: none;
+  }
+
+  .dashboard-links {
+    display: none;
+  }
+  .dashboard-profile {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff6b2c;
+    border: none;
+    text-align: center;
+    margin-right: 2vw;
+  }
+  .dashboard-svgs {
+    display: none;
+  }
+}

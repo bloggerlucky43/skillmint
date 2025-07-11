@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import Sidebar from "./sidebar";
 const Layout = () => {
   const navigate = useNavigate();
 
@@ -9,6 +10,9 @@ const Layout = () => {
     <div className="dashboard-page">
       <div className="dashboard-container">
         <div className="dashboard-nav">
+          <div className="side-bar">
+            <Sidebar />
+          </div>
           <div className="dashboard-logo" onClick={clickFunction}>
             <img
               src="/images/SM-removebg-preview.png"
@@ -71,22 +75,6 @@ const Layout = () => {
         </div>
       </div>
     </div>
-    // <>
-    //   <div className="side-bar">
-    //     <div className="side-bar-container">
-    //       <div className="side-logo">
-    //         <img src="/images/SM-removebg-preview.png" alt="" />
-    //       </div>
-
-    //       <div className="side-bar-navs">
-    //         <Link>Dashboard</Link>
-    //         <Link>Courses</Link>
-    //         <Link>Tasks</Link>
-    //         <Link>Profile</Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </>
   );
 };
 
