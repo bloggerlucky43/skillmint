@@ -1,4 +1,9 @@
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Introduction from "./intro/introduction";
 const Section = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="course-section">
       <div className="eachcourse-container">
@@ -18,7 +23,9 @@ const Section = () => {
 
       <div className="course-content">
         <div className="course-btn">
-          <button>Start Learning</button>
+          <Button onClick={() => setShowModal(true)} variant="primary">
+            Start Learning
+          </Button>
         </div>
         <div className="course-segment">
           <svg
@@ -135,6 +142,8 @@ const Section = () => {
           <img src="/" alt="course certificate" />
         </div>
       </div>
+
+      <Introduction show={showModal} onHide={() => setShowModal(false)} />
     </div>
   );
 };

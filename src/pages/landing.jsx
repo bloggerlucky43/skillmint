@@ -5,6 +5,8 @@ import MainSection from "./sections/mainsection";
 import Section from "./sections/section";
 import Faq from "./sections/faq";
 import { useState } from "react";
+import BasicExample from "./sections/dropdown";
+import Sidebar from "./sections/offcanvas";
 
 const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -33,6 +35,9 @@ const Landing = () => {
     <div className="page">
       <div className="general-container">
         <div className="nav">
+          <div className="side-bar">
+            <Sidebar />
+          </div>
           <div className="logo" onClick={handleClick}>
             <img
               src="/images/SM-removebg-preview.png"
@@ -41,6 +46,7 @@ const Landing = () => {
             />
             <h1>SkillMint</h1>
           </div>
+
           <div className="links">
             <ul>
               <li>

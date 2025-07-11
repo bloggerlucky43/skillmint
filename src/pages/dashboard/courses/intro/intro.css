@@ -1,0 +1,12 @@
+.solana-modal {
+  background-color: #080c1d !important;
+  color: white;
+}
+.solana-content {
+  background-color: #0a0f24 !important;
+  color: white;
+  text-align: center;
+}
+.solana-footer {
+  background-color: #080c1d;
+}
