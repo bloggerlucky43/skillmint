@@ -321,7 +321,7 @@
   }
 
   .buttons {
-    display: none;
+    display: block;
   }
   .btn-started button {
     padding: 0.5rem 1rem;
@@ -347,9 +347,6 @@
     color: white;
     text-decoration: none;
   }
-  .buttons button:hover {
-    background-color: #bd4c1b;
-  }
 
   .sub-head-container {
     color: #d6d9e0;
@@ -366,23 +363,20 @@
     flex: 1 1 50%;
   }
   .animation {
-    width: 50vw;
-    height: auto;
-    place-self: center;
+    width: 100%;
+    
   }
   .hero-animation {
-    width: 60vw;
+    width: 100%;
   }
   .sub-head-container h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
   .sub-head-container p {
-    font-size: 0.9rem;
-    color: #d6d9e0;
-    margin-bottom: 1.4rem;
+    font-size: 1rem;
   }
   .main-container {
     text-align: center;
@@ -391,61 +385,45 @@
   }
   .main-container h1 {
     color: #d6d9e0;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-container p {
     color: #d6d9e0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
   .feature-container {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
   }
   .feature {
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
+    width: 90%;
+    place-self: center;
   }
   .feature h1 {
-    font-size: 2.2rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 400;
   }
   .feature p {
     color: #d6d9e0;
+    font-size: 0.9rem;
   }
   .bi {
     color: blue;
-    width: 2rem !important;
-    margin-bottom: 2vh;
-  }
-  .how-con {
-    background-color: #0a0f24;
-    text-align: center;
-    color: #d6d9e0;
-    padding: 2rem 4rem;
-  }
-  .how-con h1 {
-    font-size: 2.2rem;
-  }
-  .how-con p {
-    margin-top: 2vh;
-    font-size: 1.4rem;
-  }
-  .how-subcontainer {
-    font-size: 2rem;
-    justify-self: center;
-    line-height: 6rem;
-  }
-  .how li {
-    list-style-type: decimal;
+    width: 1.5rem !important;
+    margin-bottom: 1vh;
   }
   .section-container {
     text-align: center;
     color: #d6d9e0;
   }
   .section-container h1 {
-    margin-bottom: 4vh;
-    font-size: 1.6rem;
+    margin-bottom: 1vh;
+    font-size: 1.4rem;
+    font-weight:400;
   }
   .marquee {
     background-color: #0a0f24;
@@ -455,7 +433,7 @@
     overflow: hidden;
     width: 100%;
     background-color: #0a0f24;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .marquee {
@@ -465,40 +443,7 @@
   }
 
   .marquee img {
-    width: 150px;
-    height: auto;
-    margin: 0 20px;
-    object-fit: contain;
+    width: 120px;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  .faq-container {
-    color: #d6d9e0;
-    padding: 2rem;
-  }
-  .accordion-item {
-    background-color: #0a0f24 !important;
-  }
-  .accordion-button {
-    background-color: #0a0f24 !important;
-  }
-  .form-bg {
-    width: 400px;
-    z-index: 1050;
-    transition: transform 0.3s ease-in-out;
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
 }

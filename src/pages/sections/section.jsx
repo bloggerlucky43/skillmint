@@ -2,7 +2,6 @@ const images = [
   "/images/bnb-removebg-preview.png",
   "/images/starknet-removebg-preview.png",
   "/images/avalance-removebg-preview.png",
-  "/images/solana-removebg-preview.png",
   "/images/polygon-removebg-preview.png",
 ];
 
