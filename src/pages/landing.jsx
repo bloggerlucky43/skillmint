@@ -8,7 +8,8 @@ import { useState } from "react";
 import Sidebar from "./sections/offcanvas";
 
 const bApp = import.meta.env.VITE_PUBLIC_API_URL_LIVE;
-console.log(bApp);
+console.log("bApp value:", bApp);
+console.log("ENV Check:", import.meta.env.VITE_PUBLIC_API_URL_LIVE);
 
 const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -64,7 +65,7 @@ const Landing = () => {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
 
       if (res.ok) {
         alert("Sign up successful");
