@@ -10,9 +10,9 @@ const Introduction = ({ show, onHide }) => {
         <Modal.Title>Introduction to Solana</Modal.Title>
       </Modal.Header>
       <Modal.Body className="solana-content">
-        <p>
+        <div>
           <ControlledCarousel />
-        </p>
+        </div>
       </Modal.Body>
       <Modal.Footer className="solana-footer">
         <Button variant="secondary" onClick={onHide}>

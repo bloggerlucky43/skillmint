@@ -555,6 +555,7 @@
   }
   .bi-list {
     color: #d6d9e0 !important;
+    filter: invert(1);
   }
 
   .drop-list {
