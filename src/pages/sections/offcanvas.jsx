@@ -9,6 +9,10 @@ function Sidebar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <Button variant="primary" onClick={handleShow} className="bi-menu">
@@ -42,7 +46,7 @@ function Sidebar() {
             onClick={handleClose}
             aria-label="Close"
           />
-          <Offcanvas.Title className="sm-logo">
+          <Offcanvas.Title className="sm-logo" onClick={handleClick}>
             <img
               src="/images/SM-removebg-preview.png"
               alt="logo"

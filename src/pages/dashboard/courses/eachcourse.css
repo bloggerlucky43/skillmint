@@ -86,3 +86,38 @@
   width: 50vw;
   text-align: center;
 }
+
+@media (max-width: 575.98px) {
+  .course-section {
+    margin-top: 12%;
+  }
+  .course-img {
+    margin-top: 8vh;
+  }
+  .course-img h1 {
+    font-size: 1.8rem;
+  }
+  .course-btn {
+    place-self: center;
+  }
+
+  .course-segment {
+    background-color: #0a0f24;
+    width: 85%;
+  }
+  .course-segment h4 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .bi-book {
+    margin-left: 0;
+  }
+  .course-mission {
+    background-color: #0a0f24;
+    width: 85%;
+  }
+  .course-mission h4 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

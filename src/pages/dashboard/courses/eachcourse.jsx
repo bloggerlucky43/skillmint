@@ -7,9 +7,6 @@ const EachCourse = () => {
       <Layout />
       <Section />
     </>
-    // <div className="each-course">
-    //   <h1>WElcome</h1>
-    // </div>
   );
 };
 export default EachCourse;
