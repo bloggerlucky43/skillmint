@@ -8,7 +8,7 @@ const Section = () => {
     <div className="course-section">
       <div className="eachcourse-container">
         <div className="course-img">
-          <img src="/images/solana.png" alt="solana" />
+          <img src="/images/introtostarknet.PNG" alt="solana" />
           <h1>Introduction to solana blockchain</h1>
         </div>
         <p>

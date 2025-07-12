@@ -3,27 +3,27 @@ import { useNavigate } from "react-router-dom";
 
 const images = [
   {
-    src: "/images/solana.png",
-    text: "Kickstart your Web3 journey by building fast, low-cost apps on Solana. No experience needed — learn, build, and earn in minutes!",
+    src: "/images/introtostarknet.PNG",
+    text: "Kickstart your Web3 journey by building fast, low-cost apps on Starknet. No experience needed — learn, build, and earn in minutes!",
   },
   {
-    src: "/images/solana.png",
-    text: "Kickstart your Web3 journey by building fast, low-cost apps on Solana. No experience needed — learn, build, and earn in minutes!",
+    src: "/images/introtostarknet.PNG",
+    text: "Kickstart your Web3 journey by building fast, low-cost apps on Starknet. No experience needed — learn, build, and earn in minutes!",
   },
 
   {
-    src: "/images/solana.png",
-    text: "Kickstart your Web3 journey by building fast, low-cost apps on Solana. No experience needed — learn, build, and earn in minutes!",
+    src: "/images/introtostarknet.PNG",
+    text: "Kickstart your Web3 journey by building fast, low-cost apps on Starknet. No experience needed — learn, build, and earn in minutes!",
   },
   {
-    src: "/images/solana.png",
-    text: "Kickstart your Web3 journey by building fast, low-cost apps on Solana. No experience needed — learn, build, and earn in minutes!",
+    src: "/images/introtostarknet.PNG",
+    text: "Kickstart your Web3 journey by building fast, low-cost apps on Starknet. No experience needed — learn, build, and earn in minutes!",
   },
 ];
 
 const lessons = [
   {
-    src: "/images/solana.png",
+    src: "/images/introtostarknet.PNG",
     title: "Introduction to Solana",
     text: "Advancing your journey lets you earn experience points (XP), collect tradable $SKILL tokens, and access exclusive features while displaying your abilities. By completing interactive lessons, tackling exciting challenges, and joining competitive hackathons, you’ll build new skills, monitor your growth, and present your accomplishments to the world ",
   },
