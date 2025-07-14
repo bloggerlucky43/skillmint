@@ -22,7 +22,7 @@ function Sidebar() {
           className="bi bi-list"
           viewBox="0 0 16 16">
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
           />
         </svg>
@@ -37,7 +37,7 @@ function Sidebar() {
             type="button"
             className="btn-close"
             style={{
-              filter: "invert(1)", // make it white
+              filter: "invert(1)",
               position: "absolute",
               top: "1rem",
               right: "1rem",
@@ -58,10 +58,8 @@ function Sidebar() {
           <div className="drop-list">
             <div className="drop-section">
               <h2>Learn</h2>
-              <Link>Courses</Link>
-              <Link>Minis</Link>
-              <Link>Lessons</Link>
-              <Link>Courses</Link>
+              <Link to="/en/dashboard">Courses</Link>
+              <Link to="/en/learn/course">Minis</Link>
               <hr />
             </div>
             <div className="drop-section">

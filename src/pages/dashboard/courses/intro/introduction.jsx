@@ -1,18 +1,15 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-
 import "./intro.css";
 import ControlledCarousel from "./carousel";
-const Introduction = ({ show, onHide }) => {
+const Introduction = ({ show, onHide, slides }) => {
   return (
     <Modal show={show} fullscreen={true} onHide={onHide}>
       <Modal.Header className="solana-modal" closeButton>
-        <Modal.Title>Introduction to Solana</Modal.Title>
+        <Modal.Title>Lesson</Modal.Title>
       </Modal.Header>
       <Modal.Body className="solana-content">
-        <div>
-          <ControlledCarousel />
-        </div>
+        <ControlledCarousel slides={slides} />
       </Modal.Body>
       <Modal.Footer className="solana-footer">
         <Button variant="secondary" onClick={onHide}>

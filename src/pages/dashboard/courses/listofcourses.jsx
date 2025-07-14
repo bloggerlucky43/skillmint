@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const images = [
   {
     src: "/images/introtostarknet.PNG",
-    text: "Kickstart your Web3 journey by building fast, low-cost apps on Starknet. No experience needed — learn, build, and earn in minutes!",
+    text: "Discover the fundamentals of Starknet and why it matters in the blockchain space",
   },
   {
     src: "/images/introtostarknet.PNG",

@@ -2,40 +2,17 @@ import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 
-function ControlledCarousel({ onSubmit }) {
+function ControlledCarousel({ slides = [], onSubmit }) {
   const [index, setIndex] = useState(0);
-
-  const slides = [
-    {
-      title: "What is Solana?",
-      text: "Solana is a high-performance blockchain that supports fast, low-cost transactions. It's designed to handle thousands of transactions per second, making it suitable for scalable apps like DeFi, NFTs, and games.",
-    },
-    {
-      title: "Why Solana over other blockchains?",
-      text: "Unlike Ethereum, which suffers from high gas fees and congestion, Solana uses a unique Proof of History (PoH) system, combined with Proof of Stake (PoS), allowing for faster consensus and cheaper transactions",
-    },
-    {
-      title: "Developer Environment Setup",
-      text: "",
-    },
-  ];
 
   const handlePrev = () => {
     setIndex((prev) => (prev > 0 ? prev - 1 : slides.length - 1));
   };
 
-  const handleNext = () => {
-    if (index < slides.length - 1) {
-      setIndex((prev) => prev + 1);
-    }
-  };
+  const handleNext = () => index < slides.length - 1 && setIndex(index + 1);
 
   const handleSubmit = () => {
-    if (onSubmit) {
-      onSubmit(); // custom action from parent
-    } else {
-      alert("Introduction completed!");
-    }
+    onSubmit ? onSubmit() : alert("Lesson completed!");
   };
 
   return (
